@@ -1,0 +1,112 @@
+/* PC */ 
+
+@media (min-width: 1023px)  {
+    
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    
+    .header__wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .food__list-img {
+        width: 100px;
+        border-radius: 6px;
+    }
+
+    .food__list-description {
+        padding: 50px;
+    }
+    .header__wrap {
+        justify-content: space-between;
+    }
+
+}
+
+/* Mobile */ 
+
+@media (max-width: 740px) {
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .food__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        padding-left: 0;
+        border-radius: 0;
+    }
+
+    .food__list-img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .food__list-description {
+        padding: 0;
+    }
+
+    .pad {
+        text-align: center;
+    }
+
+    .food__list-buy-btn {
+        display: flex;
+        margin: 10px auto;
+        padding: 8px 36%;
+        border-radius: 0;
+    }
+
+    .mb {
+        margin-bottom: 20px;
+    }
+
+    .header__wrap {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--food-menu-color);
+        z-index: 1;
+        top: 0;
+    }
+
+    .header__search {
+        margin-top: 68px;
+    }
+
+    .header__background {
+        height: 120px;
+    }
+
+    .header__search-form {
+        top: 30%;
+    }
+
+    .search-btn {
+        font-size: 1rem;
+    }
+
+    .categories {
+        margin: 0 20px;
+    }
+}
+
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+    
+}
